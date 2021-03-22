@@ -14,7 +14,7 @@ install.packages('mice')
 library(mice)
 
 # Multiple imputation analysis
-numberOfMIRounds = 1000
+numberOfMIRounds = 100
 imp = mice(dataframe, m=numberOfMIRounds) # The 'mice' function does a MI analysis with m = number of rounds of MI
 
 # check (visually) if imputed values are not 'weird'
